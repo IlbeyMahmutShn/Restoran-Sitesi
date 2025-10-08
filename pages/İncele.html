@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Restorant Web Site</title>
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="shortcut icon" type="png" href="../images/logo.png">
+  </head>
+
+  <body>
+    <!-- header bölümü başlangıc -->
+
+    <header class="header">
+      <a href="#" class="logo">
+        <img src="../images/logo.png" alt="logoya ulaşılamıyor!" />
+      </a>
+      <nav class="navbar">
+        <a href="../index.html">Ana Sayfa</a>
+        <a href="../pages/Hakkında.html">Hakkında</a>
+        <a href="../pages/Menü.html">Menü</a>
+        <a href="../pages/Ürünler.html">Ürünler</a>
+        <a href="../pages/İncele.html" class="active">İncele</a>
+        <a href="../pages/İletişim.html">İletişim</a>
+        <a href="../pages/Blog.html">Bloglar</a>
+      </nav>
+
+      <div class="buttons">
+        <button id="search-btn">
+          <i class="fas fa-search"></i>
+        </button>
+        <button id="shopping-btn">
+          <i class="fas fa-shopping-cart"></i>
+        </button>
+        <button id="menu-btn">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+
+      <div class="search-form">
+        <input
+          style="background-color: yellow;"
+          type="text"
+          class="search-input"
+          id="search-box"
+          placeholder="Search here"
+        />
+        <i class="fas fa-search"></i>
+      </div>
+      <div class="cart-items-container">
+        <div class="cart-items">
+          <i class="fas fa-times"></i>
+          <img
+            src="../images/menu-1.png"
+            alt="Resim yüklenemedi!"
+            class="cart-images"
+          />
+          <div class="content">
+            <h3>Sepet Öğesi 01</h3>
+            <div class="prices">99.99TL/-</div>
+          </div>
+        </div>
+        <div class="cart-items">
+          <i class="fas fa-times"></i>
+          <img
+            src="../images/menu-2.png"
+            alt="Resim yüklenemedi!"
+            class="cart-images"
+          />
+          <div class="content">
+            <h3>Sepet Öğesi 02</h3>
+            <div class="prices">69.99TL/-</div>
+          </div>
+        </div>
+        <div class="cart-items">
+          <i class="fas fa-times"></i>
+          <img
+            src="../images/menu-3.png"
+            alt="Resim yüklenemedi!"
+            class="cart-images"
+          />
+          <div class="content">
+            <h3>Sepet Öğesi 03</h3>
+            <div class="prices">39.99TL/-</div>
+          </div>
+        </div>
+        <div class="cart-items">
+          <i class="fas fa-times"></i>
+          <img
+            src="../images/menu-4.png"
+            alt="Resim yüklenemedi!"
+            class="cart-images"
+          />
+          <div class="content">
+            <h3>Sepet Öğesi 04</h3>
+            <div class="prices">49.99TL/-</div>
+          </div>
+        </div>
+        <a href="#" class="btn">Şimdi Kontrol Et</a>
+      </div>
+    </header>
+
+    <!-- header bölümü bitiş -->
+    
+    <!-- müşteri yorumu bölümü başlangıç -->
+
+    <section class="review">
+      <h1 class="H1">DEĞERLENDİRMELERİMİZ</h1>
+      <div class="box-container">
+        <div class="box">
+          <img src="../images/quote.png" alt="Resim yüklenemedi!" />
+          <p>
+            Klasik Amerikan mutfağı sunan pek çok yerel restoranın menüsünde
+            hamburger yer alır. Neyse ki benim için her zamankinden daha fazla
+            hamburger deneyebiliyorum. Son zamanlarda bir öğle yemeği beni
+            Spring Branch'te gizli bir mücevher olan KP's Kitchen'a götürdü. Şef
+            odaklı menüleriyle tanınan, onların versiyonunu ağzıma almak için
+            can atıyordum. Hayal kırıklığına uğramadığımı paylaşmaktan
+            memnuniyet duyuyorum.
+          </p>
+          <img
+            src="../images/avatar-1.png"
+            alt="Resim yüklenemedi!"
+            class="users"
+          />
+          <h3>Damla Öztürk</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+        </div>
+        <div class="box">
+          <img src="../images/quote.png" alt="Resim yüklenemedi!" />
+          <p>
+            Sahibi Kerry Pauly kesinlikle burgerler hakkında bir iki şey
+            biliyor! KP Burgerleri , tüm tat beklentilerimi, basitçe hazırlanmış
+            ve t Amerikan peyniri, tütsülenmiş domuz pastırması ve dijonnaise
+            ile doldurulmuş iki köfteyle - 70/30 kıyma karışımı - karşıladı.
+            Yıldız, olması gerektiği gibi, güzel bir tada ve akan meyve suları
+            ile birlikte güzelce kömürleşmiş bir dış kısma sahip iki ince
+            köfteydi. Tek başına etten bir ısırık almak beni mutlu burger
+            mekanıma getirdi. Peynir daha iyi erimesini sağlamak için pişerken
+            burgerin üzerine konulabilirdi; ancak, ben burgeri yerken bu durum
+            düzeldi. Pastırma, genel deneyime çok az şey kattı, bu yüzden bir
+            sonraki ziyaretimde onlardan 86'ya bu eklemeyi isteyeceğim. Her şey
+            etle ilgili!
+          </p>
+          <img
+            src="../images/avatar-2.png"
+            alt="Resim yüklenemedi!"
+            class="users"
+          />
+          <h3>Ataberk Doğanay</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+        </div>
+        <div class="box">
+          <img src="../images/quote.png" alt="Resim yüklenemedi!" />
+          <p>
+            Burgere eşlik eden patates kızartmasının bir tarafı, daha gevrek bir
+            doku ve yumuşak orta ile birlikte doğru miktarda tuz ve karabiber
+            ile tatlandırılmış taze kesilmiş ince lokmalardı. Servis, yemeğimin
+            tadını çıkardığımdan emin olmak için masamın yanında duran Pauley
+            ile özenli ve kişiseldi. Bu kişisel dokunuş bir fark yaratıyor ve
+            KP's Kitchen'da gelecekteki burgerleri dört gözle bekliyorum.
+          </p>
+          <img
+            src="../images/avatar-3.png"
+            alt="Resim yüklenemedi!"
+            class="users"
+          />
+          <h3>Melek Sarıkaya</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- müşteri yorumu bölümü bitiş -->
+
+    <!-- alt bilgi bölümü başlangıç -->
+
+    <section class="footer">
+      <div class="search">
+        <input type="text" class="search-input" placeholder="Ara" />
+        <button class="btn btn-primary">Search</button>
+      </div>
+      <div class="share">
+        <a
+          href="https://www.instagram.com/ilbey.ms/"
+          class="fab fa-instagram"
+        ></a>
+        <a href="kisi facebook kullanmiyor!" class="fab fa-facebook"></a>
+        <a href="https://wa.me/qr/SWJH6IXDP5EDN1" class="fab fa-whatsapp"></a>
+      </div>
+      <div class="links">
+        <a href="../index.html">Ana Sayfa</a>
+        <a href="../pages/Hakkında.html">Hakkında</a>
+        <a href="../pages/Menü.html">Menü</a>
+        <a href="../pages/Ürünler.html">Ürünler</a>
+        <a href="../pages/İncele.html" class="active">İncele</a>
+        <a href="../pages/İletişim.html">İletişim</a>
+        <a href="../pages/Blog.html">Bloglar</a>
+      </div>
+      <div class="credit">
+        © 2022 Sayfanın yapımcısı <span>Mahmut Şahin</span> |
+        <span style="color: yellow">Tüm haklar saklıdır.</span>
+      </div>
+    </section>
+
+    <!-- alt bilgi bölümü bitiş -->
+
+    <script src="../js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>İletişim</title>
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="shortcut icon" type="png" href="../images/logo.png">
+  </head>
+
+  <body>
+    <!-- header bölümü başlangıc -->
+
+    <header class="header">
+      <a href="#" class="logo">
+        <img src="../images/logo.png" alt="logoya ulaşılamıyor!" />
+      </a>
+      <nav class="navbar">
+        <a href="../index.html">Ana Sayfa</a>
+        <a href="../pages/Hakkında.html">Hakkında</a>
+        <a href="../pages/Menü.html">Menü</a>
+        <a href="../pages/Ürünler.html">Ürünler</a>
+        <a href="../pages/İncele.html">İncele</a>
+        <a href="../pages/İletişim.html" class="active">İletişim</a>
+        <a href="../pages/Blog.html">Bloglar</a>
+      </nav>
+
+      <div class="buttons">
+        <button id="search-btn">
+          <i class="fas fa-search"></i>
+        </button>
+        <button id="shopping-btn">
+          <i class="fas fa-shopping-cart"></i>
+        </button>
+        <button id="menu-btn">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+
+      <div class="search-form">
+        <input
+          style="background-color: yellow"
+          type="text"
+          class="search-input"
+          id="search-box"
+          placeholder="Search here"
+        />
+        <i class="fas fa-search"></i>
+      </div>
+      <div class="cart-items-container">
+        <div class="cart-items">
+          <i class="fas fa-times"></i>
+          <img
+            src="../images/menu-1.png"
+            alt="Resim yüklenemedi!"
+            class="cart-images"
+          />
+          <div class="content">
+            <h3>Sepet Öğesi 01</h3>
+            <div class="prices">99.99TL/-</div>
+          </div>
+        </div>
+        <div class="cart-items">
+          <i class="fas fa-times"></i>
+          <img
+            src="../images/menu-2.png"
+            alt="Resim yüklenemedi!"
+            class="cart-images"
+          />
+          <div class="content">
+            <h3>Sepet Öğesi 02</h3>
+            <div class="prices">69.99TL/-</div>
+          </div>
+        </div>
+        <div class="cart-items">
+          <i class="fas fa-times"></i>
+          <img
+            src="../images/menu-3.png"
+            alt="Resim yüklenemedi!"
+            class="cart-images"
+          />
+          <div class="content">
+            <h3>Sepet Öğesi 03</h3>
+            <div class="prices">39.99TL/-</div>
+          </div>
+        </div>
+        <div class="cart-items">
+          <i class="fas fa-times"></i>
+          <img
+            src="../images/menu-4.png"
+            alt="Resim yüklenemedi!"
+            class="cart-images"
+          />
+          <div class="content">
+            <h3>Sepet Öğesi 04</h3>
+            <div class="prices">49.99TL/-</div>
+          </div>
+        </div>
+        <a href="#" class="btn">Şimdi Kontrol Et</a>
+      </div>
+    </header>
+
+    <!-- header bölümü bitiş -->
+
+    <!-- iletişim bölümü başlangıç -->
+
+    <section class="contact">
+      <h1 class="H1">BİZE ULAŞIN</h1>
+      <div class="row">
+        <iframe 
+         src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1852.158430508172!2d39.186150192658644!3d38.67309138563955!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4076c03ed3e33d0d%3A0xd1d31031c6bd5182!2sFirat%20%C3%9Cniversitesi%20bilgisayar%20m%C3%BChendisli%C4%9Fi%20fak%C3%BCltesi!5e0!3m2!1str!2str!4v1759746549494!5m2!1str!2str"
+         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" 
+         referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        <form method="post" action="post">
+          <h3>Bizimle Temasa Geç!</h3>
+          <div class="input-box">
+            <i class="fas fa-user"></i>
+            <input type="text" placeholder="İsim" />
+          </div>
+          <div class="input-box">
+            <i class="fas fa-user"></i>
+            <input type="text" placeholder="Soyisim" />
+          </div>
+          <div class="input-box">
+            <i class="fas fa-envelope"></i>
+            <input type="email" placeholder="E-posta" />
+          </div>
+          <div class="input-box">
+            <i class="fas fa-phone"></i>
+            <input type="number" placeholder="Telefon" />
+          </div>
+          <input type="submit" class="btn" value="Şimdi İletişime Geç" />
+        </form>
+      </div>
+    </section>
+
+    <!-- iletişim bölümü bitiş -->
+
+    <!-- alt bilgi bölümü başlangıç -->
+
+    <section class="footer">
+      <div class="search">
+        <input type="text" class="search-input" placeholder="Ara" />
+        <button class="btn btn-primary">Search</button>
+      </div>
+      <div class="share">
+        <a
+          href="https://www.instagram.com/ilbey.ms/"
+          class="fab fa-instagram"
+        ></a>
+        <a href="kisi facebook kullanmiyor!" class="fab fa-facebook"></a>
+        <a href="https://wa.me/qr/SWJH6IXDP5EDN1" class="fab fa-whatsapp"></a>
+      </div>
+      <div class="links">
+        <a href="../index.html">Ana Sayfa</a>
+        <a href="../pages/Hakkında.html">Hakkında</a>
+        <a href="../pages/Menü.html">Menü</a>
+        <a href="../pages/Ürünler.html">Ürünler</a>
+        <a href="../pages/İncele.html">İncele</a>
+        <a href="../pages/İletişim.html" class="active">İletişim</a>
+        <a href="../pages/Blog.html">Bloglar</a>
+      </div>
+      <div class="credit">
+        © 2022 Sayfanın yapımcısı <span>Mahmut Şahin</span> |
+        <span style="color: yellow">Tüm haklar saklıdır.</span>
+      </div>
+    </section>
+
+    <!-- alt bilgi bölümü bitiş -->
+
+    <script src="../js/script.js"></script>
+  </body>
+</html>

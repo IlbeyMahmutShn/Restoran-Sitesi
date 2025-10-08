@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Blog</title>
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="shortcut icon" type="png" href="../images/logo.png" />
+  </head>
+  <body>
+    <!-- header bölümü başlangıc -->
+
+    <header class="header">
+      <a href="#" class="logo">
+        <img src="../images/logo.png" alt="logoya ulaşılamıyor!" />
+      </a>
+      <nav class="navbar">
+        <a href="../index.html">Ana Sayfa</a>
+        <a href="../pages/Hakkında.html">Hakkında</a>
+        <a href="../pages/Menü.html">Menü</a>
+        <a href="../pages/Ürünler.html">Ürünler</a>
+        <a href="../pages/İncele.html">İncele</a>
+        <a href="../pages/İletişim.html">İletişim</a>
+        <a href="../pages/Blog.html" class="active">Bloglar</a>
+      </nav>
+
+      <div class="buttons">
+        <button id="search-btn">
+          <i class="fas fa-search"></i>
+        </button>
+        <button id="shopping-btn">
+          <i class="fas fa-shopping-cart"></i>
+        </button>
+        <button id="menu-btn">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+
+      <div class="search-form">
+        <input
+          style="background-color: yellow"
+          type="text"
+          class="search-input"
+          id="search-box"
+          placeholder="Search here"
+        />
+        <i class="fas fa-search"></i>
+      </div>
+      <div class="cart-items-container">
+        <div class="cart-items">
+          <i class="fas fa-times"></i>
+          <img
+            src="../images/menu-1.png"
+            alt="Resim yüklenemedi!"
+            class="cart-images"
+          />
+          <div class="content">
+            <h3>Sepet Öğesi 01</h3>
+            <div class="prices">99.99TL/-</div>
+          </div>
+        </div>
+        <div class="cart-items">
+          <i class="fas fa-times"></i>
+          <img
+            src="../images/menu-2.png"
+            alt="Resim yüklenemedi!"
+            class="cart-images"
+          />
+          <div class="content">
+            <h3>Sepet Öğesi 02</h3>
+            <div class="prices">69.99TL/-</div>
+          </div>
+        </div>
+        <div class="cart-items">
+          <i class="fas fa-times"></i>
+          <img
+            src="../images/menu-3.png"
+            alt="Resim yüklenemedi!"
+            class="cart-images"
+          />
+          <div class="content">
+            <h3>Sepet Öğesi 03</h3>
+            <div class="prices">39.99TL/-</div>
+          </div>
+        </div>
+        <div class="cart-items">
+          <i class="fas fa-times"></i>
+          <img
+            src="../images/menu-4.png"
+            alt="Resim yüklenemedi!"
+            class="cart-images"
+          />
+          <div class="content">
+            <h3>Sepet Öğesi 04</h3>
+            <div class="prices">49.99TL/-</div>
+          </div>
+        </div>
+        <a href="#" class="btn">Şimdi Kontrol Et</a>
+      </div>
+    </header>
+
+    <!-- header bölümü bitiş -->
+
+    <!-- blog bölümü başlangıç -->
+
+    <section class="blogs">
+      <h1 class="H1">BLOGLARIMIZ</h1>
+      <div class="box-container">
+        <div class="box">
+          <div class="image">
+            <img src="../images/blog-1.jpg" alt="Resim yüklenemedi!" />
+          </div>
+          <div class="content">
+            <a href="#" class="title">Büyükannesinin Tarifi!</a>
+            <span>Admin / 10.Kasım.2022</span>
+            <p>
+              Killen, büyükannesinin tariflerini kullanarak menüde Fried
+              Chicken, Meatloaf ve Chicken Fried Steak'i öne çıkarıyor. Hiçbir
+              rahat yemek restoranı hamburger olmadan tamamlanmış sayılmaz ve
+              Cafeteria Burger'lerinden hayal kırıklığına uğramadım.. Etli,
+              sulu, el yapımı köftenin üzerinde kabarık bir börek çöreği
+              oturuyor. Et, bu burgeri neredeyse bir başyapıt haline getiren
+              merkez sahneyi alır. Orta sırama göre mükemmel bir şekilde
+              pişirilmiş, köftenin her tarafını saran peynirle tatlar, geçmiş
+              bir dönemin nostaljik burger tadıyla eve çarpıyor. Süslü değil -
+              sadece çok iyi bir hamburger. Sağlam kızarmış çörek, kömürle kaplı
+              köftenin her ısırmasıyla bozulmadan kalan mükemmel bir eşleşmeydi.
+              Tadına bayıldım, yanına taze garnitür (marul, domates, soğan,
+              dilimlenmiş dereotu turşusu) eklemeye gerek görmedim.
+              Beraberindeki hafif tuzlu ve çıtır çıtır elle kesilmiş patates
+              kızartması, burgerin genel ince tatlılığını tamamladı. Burgeri
+              yedikten sonra damağım mutlu ve memnundu. Bazı burgerler
+              kesinlikle beklemeye değer.
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="../images/blog-2.jpg" alt="Resim yüklenemedi!" />
+          </div>
+          <div class="content">
+            <a href="#" class="title">Aktif Kabonlu Burger Ekmeği Nedir?</a>
+            <span>Admin / 24.Eylül.2022</span>
+            <p>
+              Son yıllarda oldukça popüler olan aktif karbon birçok üründe
+              kullanılıyor. Gıdadan, diş macununa, yüz yıkama ürünlerinden
+              içeceklere kadar birçok yerde karşımıza çıkıyor. Aktif karbon
+              yanmış yiyecek veya yanmış kömür değil. Aslında aktif karbon bir
+              takviye. Eczanelerde preparat şeklinde bulunuyor. Aktif kömür ya
+              da aktif karbon olarak bilinen takviye ile ilgili uzmanlar
+              akşamdan kalmayı önlemeye, gazı azaltmaya, hazımsızlığı ve ishali
+              azaltmaya ve vücuttaki toksinleri temizlemeye yardımcı
+              olabileceğini söylüyor. Bu yazımda yüksek ihtimal ile herkesi
+              aktif karbon ile tanıştıran, aktif karbonlu burger ekmeği reçetesi
+              paylaşıyor olucam. Bu reçeteyi instagramda ilk paylaştığımda çok
+              sükse yarattı. Bir çok kişi bana aktif karbonu nereden
+              edinebileceğini sordu. Aktif karbonu Metro marketler veya internet
+              üzerinden yenilebilir aktif karbon olarak satın alabilirsiniz.
+              Ekmeğin dokusunda veya tadında herhangi bir değişiklik yapmıyor ve
+              oldukça havalı. 🙂 Reçete oldukça basit ve açıklayıcı. Evinizde
+              bir hamburger partisi vermeyi düşünebilirsiniz. Bir sonraki
+              yazımda en az güzel bir hamburgerci kadar nefis hamburger nasıl
+              hazırlarsınız ondan bahsedeceğim. Elbetteki burger ekmeklerinizi
+              hazırladıktan sonra. 🙂
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="../images/blog-3.jpg" alt="Resim yüklenemedi!" />
+          </div>
+          <div class="content">
+            <a href="#" class="title">Tropikal Burgeri Çok Sevdim!</a>
+            <span>Admin / 04.Temmuz.2022</span>
+            <p>
+              Bu burger türünün tek örneği. Herhangi bir burgerde olması
+              gerektiği gibi, en önemli parça iki 44 Farms köftesidir - sulu ve
+              yumuşak, dışı kömürleşmiş ve çıtır çıtır. Güzelce eritilmiş
+              Amerikan peyniri, acılı aioli (hoş bir baharatlı dokunuş için),
+              turşu ve soğanın tepesinde tatlı bir Hawai çöreği olan ve
+              burgerler için popüler bir çörek haline gelen, diğer tatlarla
+              tezat oluşturan güzel bir tatlılık ipucu yaratan köftenin
+              mükemmelliğine iltifat edildi. bir burger üzerinde. Ayrıca
+              kızarmış yumurta, avokado ve domuz pastırması reçeli gibi küçük
+              bir ücret karşılığında ekleyebileceğiniz sayısız sos sunarlar.
+              Evet, kesinlikle tavsiye ettiğim pastırma reçeli! Bunu burgerime
+              ekledim, böylece beni burger cennetine ittim! Kenarları ve küçük
+              tabak teklifleri bol miktarda bulunur. Harika kızartmaları yerine,
+              son ziyaretimde burgerimi yukarıda bahsedilen ve benzersiz bir
+              şekilde hazırlanmış Tatlı ve Ekşi Karnabahar ile eşleştirdim.
+              Patates kızartmasını bile özlemedim! Toasted Coconut'a bir sonraki
+              ziyaretinizde onlara göz atın. Harika yemekleri ve güler yüzlü
+              hizmetlerinin yanı sıra TC, seçtiğiniz içki için mükemmel bir
+              kokteyl listesine sahiptir. Veya sizi şaşırtmalarını isteyin - son
+              derece yaratıcılar!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- blog bölümü bitiş -->
+
+    <!-- alt bilgi bölümü başlangıç -->
+
+    <section class="footer">
+      <div class="search">
+        <input type="text" class="search-input" placeholder="Ara" />
+        <button class="btn btn-primary">Search</button>
+      </div>
+      <div class="share">
+        <a
+          href="https://www.instagram.com/ilbey.ms/"
+          class="fab fa-instagram"
+        ></a>
+        <a href="kisi facebook kullanmiyor!" class="fab fa-facebook"></a>
+        <a href="https://wa.me/qr/SWJH6IXDP5EDN1" class="fab fa-whatsapp"></a>
+      </div>
+      <div class="links">
+        <a href="../index.html">Ana Sayfa</a>
+        <a href="../pages/Hakkında.html">Hakkında</a>
+        <a href="../pages/Menü.html">Menü</a>
+        <a href="../pages/Ürünler.html">Ürünler</a>
+        <a href="../pages/İncele.html">İncele</a>
+        <a href="../pages/İletişim.html">İletişim</a>
+        <a href="../pages/Blog.html" class="active">Bloglar</a>
+      </div>
+      <div class="credit">
+        © 2022 Sayfanın yapımcısı <span>Mahmut Şahin</span> |
+        <span style="color: yellow">Tüm haklar saklıdır.</span>
+      </div>
+    </section>
+
+    <!-- alt bilgi bölümü bitiş -->
+
+    <script src="../js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Restorant Web Site</title>
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link
+      rel="shortcut icon"
+      type="png"
+      href="../images/logo.png"
+    />
+  </head>
+
+  <body>
+    <!-- header bölümü başlangıc -->
+
+    <header class="header">
+      <a href="../index.html" class="logo">
+        <img
+          src="../images/logo.png"
+          alt="logoya ulaşılamıyor!"
+        />
+      </a>
+      <nav class="navbar">
+        <a href="../index.html" class="active">Ana Sayfa</a>
+        <a href="../pages/Hakkında.html">Hakkında</a>
+        <a href="../pages/Menü.html">Menü</a>
+        <a href="../pages/Ürünler.html">Ürünler</a>
+        <a href="../pages/İncele.html">İncele</a>
+        <a href="../pages/İletişim.html">İletişim</a>
+        <a href="../pages/Blog.html">Bloglar</a>
+      </nav>
+
+      <div class="buttons">
+        <button id="search-btn">
+          <i class="fas fa-search"></i>
+        </button>
+        <button id="shopping-btn">
+          <i class="fas fa-shopping-cart"></i>
+        </button>
+        <button id="menu-btn">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+
+      <div class="search-form">
+        <input
+          style="background-color: yellow"
+          type="text"
+          class="search-input"
+          id="search-box"
+          placeholder="Search here"
+        />
+        <i class="fas fa-search"></i>
+      </div>
+      <div class="cart-items-container">
+        <div class="cart-items">
+          <i class="fas fa-times"></i>
+          <img
+            src="../images/menu-1.png"
+            alt="Resim yüklenemedi!"
+            class="cart-images"
+          />
+          <div class="content">
+            <h3>Sepet Öğesi 01</h3>
+            <div class="prices">99.99TL/-</div>
+          </div>
+        </div>
+        <div class="cart-items">
+          <i class="fas fa-times"></i>
+          <img
+            src="../images/menu-2.png"
+            alt="Resim yüklenemedi!"
+            class="cart-images"
+          />
+          <div class="content">
+            <h3>Sepet Öğesi 02</h3>
+            <div class="prices">69.99TL/-</div>
+          </div>
+        </div>
+        <div class="cart-items">
+          <i class="fas fa-times"></i>
+          <img
+            src="../images/menu-3.png"
+            alt="Resim yüklenemedi!"
+            class="cart-images"
+          />
+          <div class="content">
+            <h3>Sepet Öğesi 03</h3>
+            <div class="prices">39.99TL/-</div>
+          </div>
+        </div>
+        <div class="cart-items">
+          <i class="fas fa-times"></i>
+          <img
+            src="../images/menu-4.png"
+            alt="Resim yüklenemedi!"
+            class="cart-images"
+          />
+          <div class="content">
+            <h3>Sepet Öğesi 04</h3>
+            <div class="prices">49.99TL/-</div>
+          </div>
+        </div>
+        <a href="#" class="btn">Şimdi Kontrol Et</a>
+      </div>
+    </header>
+
+    <!-- header bölümü bitiş -->
+
+    <!-- anasayfa bölümü başlangıç -->
+
+    <section class="home" id="home">
+      <div class="content">
+        <h3>EVE HIZLI TESLİMAT</h3>
+        <p>
+          Dilediğiniz yere anında sıcak teslimat istediğiniz zaman sipariş
+          verebilirsiniz tek tıkla sıcak yemeğiniz kapınıza gelecektir.
+        </p>
+        <a href="" class="btn">Şimdi Sipariş Ver</a>
+      </div>
+    </section>
+
+    <!-- anasayfa bölümü bitiş -->
+
+    <!-- menü bölümü başlangıç -->
+
+    <section class="menu" id="menu">
+      <h1 class="H1">MENÜMÜZ</h1>
+      <div class="box-container">
+        <div class="box">
+          <div class="box-head">
+            <img
+              src="../images/menu-1.png"
+              alt="menü resmine ılaşılamıyor!"
+            />
+            <span class="menu-category">PİZZA</span>
+            <h3>6 Küçük Pizza</h3>
+            <div class="prices">99.99TL <span>149.99TL</span></div>
+          </div>
+          <div class="box-buttom">
+            <a href="#" class="btn">Sepete ekle</a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-head">
+            <img
+              src="../images/menu-2.png"
+              alt="menü resmine ılaşılamıyor!"
+            />
+            <span class="menu-category">BURGER</span>
+            <h3>5 Küçük Burger</h3>
+            <div class="prices">69.99TL <span>99.99TL</span></div>
+          </div>
+          <div class="box-buttom">
+            <a href="#" class="btn">Sepete ekle</a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-head">
+            <img
+              src="../images/menu-3.png"
+              alt="menü resmine ılaşılamıyor!"
+            />
+            <span class="menu-category">PİZZA</span>
+            <h3>2 Karışık Pizza</h3>
+            <div class="prices">39.99TL <span>59.99TL</span></div>
+          </div>
+          <div class="box-buttom">
+            <a href="#" class="btn">Sepete ekle</a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-head">
+            <img
+              src="../images/menu-4.png"
+              alt="menü resmine ılaşılamıyor!"
+            />
+            <span class="menu-category">BURGER</span>
+            <h3>3 Köfteli Burger</h3>
+            <div class="prices">49.99TL <span>79.99TL</span></div>
+          </div>
+          <div class="box-buttom">
+            <a href="#" class="btn">Sepete ekle</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- menü bölümü bitiş -->
+
+    <!-- ürünler bölümü başlangıç -->
+
+    <section class="products" id="products">
+      <h1 class="H1">ÜRÜNLERİMİZ</h1>
+      <div class="box-container">
+        <div class="box">
+          <div class="box-head">
+            <span class="tittle">KÜÇÜK BURGER</span>
+            <a href="#" class="name">Köfteli Burger</a>
+          </div>
+          <div class="image">
+            <img
+              src="../images/product-1.png"
+              alt="Resim yüklenemedi!"
+            />
+          </div>
+          <div class="box-buttom">
+            <div class="info">
+              <b class="prices">24.99TL</b>
+              <span class="amouth">110gr / 300 Cal</span>
+            </div>
+            <div class="products-btn">
+              <a href="#">
+                <i class="fas fa-plus"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-head">
+            <span class="tittle">BURGER</span>
+            <a href="#" class="name">Aktif Kabonlu Burger</a>
+          </div>
+          <div class="image">
+            <img
+              src="../images/product-2.png"
+              alt="Resim yüklenemedi!"
+            />
+          </div>
+          <div class="box-buttom">
+            <div class="info">
+              <b class="prices">24.99TL</b>
+              <span class="amouth">110gr / 300 Cal</span>
+            </div>
+            <div class="products-btn">
+              <a href="#">
+                <i class="fas fa-plus"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="box dark-bg">
+          <div class="box-head">
+            <span class="tittle">KÜÇÜK BURGER</span>
+            <a href="#" class="name">Pastırmalı Burger</a>
+          </div>
+          <div class="image">
+            <img
+              src="../images/dark-product.jpg"
+              alt="Resim yüklenemedi!"
+            />
+          </div>
+          <div class="box-buttom">
+            <div class="info">
+              <b class="prices">24.99TL</b>
+              <span class="amouth">110gr / 300 Cal</span>
+            </div>
+            <div class="products-btn">
+              <a href="#">
+                <i class="fas fa-plus"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ürünler bölümü bitiş -->
+
+    <!-- hakkında bölümü başlangıç -->
+
+    <section class="about" id="about">
+      <h1 class="H1">HAKKIMIZDA</h1>
+      <div class="row">
+        <div class="image">
+          <img
+            src="../images/about.jpg"
+            alt="Resim yüklenemedi!"
+          />
+        </div>
+        <div class="content">
+          <h3>Burgerlerimizin Gizli Tarifi Nedir?</h3>
+          <ul>
+            <h1><b>Malzemeler;</b></h1>
+            <li>
+              <h4>495 gr un</h4>
+            </li>
+            <li>
+              <h4>5 gr aktif karbon</h4>
+            </li>
+            <li>
+              <h4>350 ml süt (ılık)</h4>
+            </li>
+          </ul>
+          <a href="../pages/Hakkında.html" class="btn"
+            >Daha Fazla</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- hakkında bölümü bitiş -->
+
+    <!-- müşteri yorumu bölümü başlangıç -->
+
+    <section class="review" id="review">
+      <h1 class="H1">DEĞERLENDİRMELERİMİZ</h1>
+      <div class="box-container">
+        <div class="box">
+          <img
+            src="../images/quote.png"
+            alt="Resim yüklenemedi!"
+          />
+          <p>
+            Klasik Amerikan mutfağı sunan pek çok yerel restoranın menüsünde
+            hamburger yer alır. Neyse ki benim için her zamankinden daha fazla
+            hamburger deneyebiliyorum. Son zamanlarda bir öğle yemeği beni
+            Spring Branch'te gizli bir mücevher olan KP's Kitchen'a götürdü. Şef
+            odaklı menüleriyle tanınan, onların versiyonunu ağzıma almak için
+            can atıyordum. Hayal kırıklığına uğramadığımı paylaşmaktan
+            memnuniyet duyuyorum.
+          </p>
+          <img
+            src="../images/avatar-1.png"
+            alt="Resim yüklenemedi!"
+            class="users"
+          />
+          <h3>Damla Öztürk</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+        </div>
+        <div class="box">
+          <img
+            src="../images/quote.png"
+            alt="Resim yüklenemedi!"
+          />
+          <p>
+            Sahibi Kerry Pauly kesinlikle burgerler hakkında bir iki şey
+            biliyor! KP Burgerleri , tüm tat beklentilerimi, basitçe hazırlanmış
+            ve t Amerikan peyniri, tütsülenmiş domuz pastırması ve dijonnaise
+            ile doldurulmuş iki köfteyle - 70/30 kıyma karışımı - karşıladı.
+            Yıldız, olması gerektiği gibi, güzel bir tada ve akan meyve suları
+            ile birlikte güzelce kömürleşmiş bir dış kısma sahip iki ince
+            köfteydi. Tek başına etten bir ısırık almak beni mutlu burger
+            mekanıma getirdi. Peynir daha iyi erimesini sağlamak için pişerken
+            burgerin üzerine konulabilirdi; ancak, ben burgeri yerken bu durum
+            düzeldi. Pastırma, genel deneyime çok az şey kattı, bu yüzden bir
+            sonraki ziyaretimde onlardan 86'ya bu eklemeyi isteyeceğim. Her şey
+            etle ilgili!
+          </p>
+          <img
+            src="../images/avatar-2.png"
+            alt="Resim yüklenemedi!"
+            class="users"
+          />
+          <h3>Ataberk Doğanay</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+        </div>
+        <div class="box">
+          <img
+            src="../images/quote.png"
+            alt="Resim yüklenemedi!"
+          />
+          <p>
+            Burgere eşlik eden patates kızartmasının bir tarafı, daha gevrek bir
+            doku ve yumuşak orta ile birlikte doğru miktarda tuz ve karabiber
+            ile tatlandırılmış taze kesilmiş ince lokmalardı. Servis, yemeğimin
+            tadını çıkardığımdan emin olmak için masamın yanında duran Pauley
+            ile özenli ve kişiseldi. Bu kişisel dokunuş bir fark yaratıyor ve
+            KP's Kitchen'da gelecekteki burgerleri dört gözle bekliyorum.
+          </p>
+          <img
+            src="../images/avatar-3.png"
+            alt="Resim yüklenemedi!"
+            class="users"
+          />
+          <h3>Melek Sarıkaya</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- müşteri yorumu bölümü bitiş -->
+
+    <!-- iletişim bölümü başlangıç -->
+
+    <section class="contact" id="contact">
+      <h1 class="H1">BİZE ULAŞIN</h1>
+      <div class="row">
+        <iframe 
+         src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1852.158430508172!2d39.186150192658644!3d38.67309138563955!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4076c03ed3e33d0d%3A0xd1d31031c6bd5182!2sFirat%20%C3%9Cniversitesi%20bilgisayar%20m%C3%BChendisli%C4%9Fi%20fak%C3%BCltesi!5e0!3m2!1str!2str!4v1759746549494!5m2!1str!2str"
+         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" 
+         referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        <form method="post" action="post">
+          <h3>Bizimle Temasa Geç!</h3>
+          <div class="input-box">
+            <i class="fas fa-user"></i>
+            <input type="text" placeholder="İsim" />
+          </div>
+          <div class="input-box">
+            <i class="fas fa-user"></i>
+            <input type="text" placeholder="Soyisim" />
+          </div>
+          <div class="input-box">
+            <i class="fas fa-envelope"></i>
+            <input type="email" placeholder="E-posta" />
+          </div>
+          <div class="input-box">
+            <i class="fas fa-phone"></i>
+            <input type="number" placeholder="Telefon" />
+          </div>
+          <input type="submit" class="btn" value="Şimdi İletişime Geç" />
+        </form>
+      </div>
+    </section>
+
+    <!-- iletişim bölümü bitiş -->
+
+    <!-- blog bölümü başlangıç -->
+
+    <section class="blogs" id="blogs">
+      <h1 class="H1">BLOGLARIMIZ</h1>
+      <div class="box-container">
+        <div class="box">
+          <div class="image">
+            <img
+              src="../images/blog-1.jpg"
+              alt="Resim yüklenemedi!"
+            />
+          </div>
+          <div class="content">
+            <a href="#" class="title">Büyükannesinin Tarifi!</a>
+            <span>Admin / 17.Eylül.2020</span>
+            <p>
+              Şu anda, Killen's salıdan cumartesiye akşam yemeği için sadece
+              rezervasyon bazında açıktır. Yakında saatlerini öğle yemeği ve
+              hafta sonu brunch'ını da içerecek şekilde genişletecekler.
+              COVID-19 uygulamalarını gözlemleyerek, seçkin masalarda maksimum 6
+              masa olacak şekilde masalar güzel bir şekilde yayılmıştır. Gürültü
+              seviyesi orta düzeyde ve burgerimi beklerken Ronnie ile sohbet
+              etmeyi başardım. Kendi arka bahçemizde böylesine büyük bir mutfak
+              dehasına sahip olduğumuz ve onun yeteneğinin Heights'ta tadını
+              çıkarabildiğimiz için ne kadar şanslıyız.
+            </p>
+            <a href="../pages/Blog.html" class="btn"
+              >Devamını Oku</a
+            >
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img
+              src="../images/blog-2.jpg"
+              alt="Resim yüklenemedi!"
+            />
+          </div>
+          <div class="content">
+            <a href="#" class="title">Aktif Kabonlu Burger Ekmeği Nedir?</a>
+            <span>Admin / 24.Eylül.2022</span>
+            <p>
+              Son yıllarda oldukça popüler olan aktif karbon birçok üründe
+              kullanılıyor. Gıdadan, diş macununa, yüz yıkama ürünlerinden
+              içeceklere kadar birçok yerde karşımıza çıkıyor. Aktif karbon
+              yanmış yiyecek veya yanmış kömür değil. Aslında aktif karbon bir
+              takviye. Eczanelerde preparat şeklinde bulunuyor.
+            </p>
+            <a href="../pages/Blog.html" class="btn"
+              >Devamını Oku</a
+            >
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img
+              src="../images/blog-3.jpg"
+              alt="Resim yüklenemedi!"
+            />
+          </div>
+          <div class="content">
+            <a href="#" class="title">Tropikal Burgeri Çok Sevdim!</a>
+            <span>Admin / 04.Temmuz.2022</span>
+            <p>
+              Bu burger türünün tek örneği. Herhangi bir burgerde olması
+              gerektiği gibi, en önemli parça iki 44 Farms köftesidir - sulu ve
+              yumuşak, dışı kömürleşmiş ve çıtır çıtır. Güzelce eritilmiş
+              Amerikan peyniri, acılı aioli (hoş bir baharatlı dokunuş için),
+              turşu ve soğanın tepesinde tatlı bir Hawai çöreği olan ve
+              burgerler için popüler bir çörek haline gelen, diğer tatlarla
+              tezat oluşturan güzel bir tatlılık ipucu yaratan köftenin
+              mükemmelliğine iltifat edildi.
+            </p>
+            <a href="../pages/Blog.html" class="btn"
+              >Devamını Oku</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- blog bölümü bitiş -->
+
+    <!-- alt bilgi bölümü başlangıç -->
+
+    <section class="footer">
+      <div class="search">
+        <input type="text" class="search-input" placeholder="Ara" />
+        <button class="btn btn-primary">Search</button>
+      </div>
+      <div class="share">
+        <a
+          href="https://www.instagram.com/ilbey.ms/"
+          class="fab fa-instagram"
+        ></a>
+        <a
+          href="https://www.facebook.com/login/?privacy_mutation_token=eyJ0eXBlIjowLCJjcmVhdGlvbl90aW1lIjoxNjcyODEyMjc3LCJjYWxsc2l0ZV9pZCI6MjY5NTQ4NDUzMDcyMDk1MX0%3D"
+          class="fab fa-facebook"
+        ></a>
+        <a href="https://wa.me/qr/SWJH6IXDP5EDN1" class="fab fa-whatsapp"></a>
+      </div>
+      <div class="links">
+        <a href="#home">Ana Sayfa</a>
+        <a href="#about">Hakkında</a>
+        <a href="#menu">Menü</a>
+        <a href="#products">Ürünler</a>
+        <a href="#review">İncele</a>
+        <a href="#contact">İletişim</a>
+        <a href="#blogs">Bloglar</a>
+      </div>
+      <div class="credit">
+        © 2022 Sayfanın yapımcısı <span>Mahmut Şahin</span> |
+        <span style="color: yellow">Tüm haklar saklıdır.</span>
+      </div>
+    </section>
+
+    <!-- alt bilgi bölümü bitiş -->
+
+    <script src="../js/script.js"></script>
+  </body>
+</html>
